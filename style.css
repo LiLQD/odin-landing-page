@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: Roboto;
 }
 
 a{
@@ -19,10 +19,6 @@ a{
     gap: 50px;
     padding: 20px 360px 100px;
 
-}
-.header,
-.hero{
-    
 }
 .header {
 
@@ -86,4 +82,64 @@ a{
     height: 300px;
 
     flex-shrink: 0;
+}
+
+.information-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+    height: 470px;
+}
+
+.information-header{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    padding-top: 30px;
+}
+.card-container{
+    display: flex;
+    gap: 50px;
+}
+.cards{
+    display: flex;
+    flex-flow: column wrap;
+    width: 150px;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+
+}
+.picture-card{
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border: solid 4px #3b82f6;
+    border-radius: 10px;
+}
+.subtext{
+    text-align: center;
+}
+
+.quote-container{
+    background-color: #E5E7EB;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quote-text{
+    font-weight: 100;
+    font-size: 36px;
+    font-style: italic;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    flex-basis: 0;
+}
+.sign{
+    margin-left: 500px;
 }
